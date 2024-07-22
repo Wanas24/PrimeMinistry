@@ -94,42 +94,36 @@
         
       </section>
       <section class="communications-announcements-section">
-        <h2>Official communications and announcements</h2>
-        <div class="container">
+        <div class="container section-topic">
+          <h2>Official communications and announcements</h2>
+        </div>
+        <div class="container communications-announcements-container">
           <picture class="communications-announcements-main-pic">
-            <img src="/Assets/Logos/Group 151.png" alt="" srcset="">
+            <img id="main-pic" src="/Assets/Logos/Group 151.png" alt="" srcset="">
           </picture>
-          <div class="communications-announcements-card">
+          <div class="communications-announcements-card" data-hover-img="/Assets/Icons/contract 1.png">
             <picture>
               <img src="/Assets/Icons/contract 1.png" alt="" srcset="">
             </picture>
-            <h2>(Official Notice) No. (9) regarding the Eid holiday
-              Blessed Eid al-Adha</h2>
-            <p>Lorem Ipsum is simply dummy text in the sense that its purpose is
-              The form, not the content, is used in the printing industries
-              The publishing house was Lorem Ipsum.</p>
+            <h2>(Official Notice) No. (9) regarding the Eid holiday Blessed Eid al-Adha</h2>
+            <p>Lorem Ipsum is simply dummy text in the sense that its purpose is The form, not the content, is used in the printing industries The publishing house was Lorem Ipsum.</p>
           </div>
-          <div class="communications-announcements-card">
+          <div class="communications-announcements-card" data-hover-img="/Assets/Icons/Job Vacancy - 4 1.png">
             <picture>
               <img src="/Assets/Icons/Job Vacancy - 4 1.png" alt="" srcset="">
             </picture>
-            <h2>(Official Notice) No. (9) regarding the Eid holiday
-              Blessed Eid al-Adha</h2>
-            <p>Lorem Ipsum is simply dummy text in the sense that its purpose is
-              The form, not the content, is used in the printing industries
-              The publishing house was Lorem Ipsum.</p>
+            <h2>(Official Notice) No. (9) regarding the Eid holiday Blessed Eid al-Adha</h2>
+            <p>Lorem Ipsum is simply dummy text in the sense that its purpose is The form, not the content, is used in the printing industries The publishing house was Lorem Ipsum.</p>
           </div>
-          <div class="communications-announcements-card">
+          <div class="communications-announcements-card" data-hover-img="/Assets/Icons/vacation - 2 1.png">
             <picture>
               <img src="/Assets/Icons/vacation - 2 1.png" alt="" srcset="">
             </picture>
-            <h2>(Official Notice) No. (9) regarding the Eid holiday
-              Blessed Eid al-Adha</h2>
-            <p>Lorem Ipsum is simply dummy text in the sense that its purpose is
-              The form, not the content, is used in the printing industries
-              The publishing house was Lorem Ipsum.</p>
+            <h2>(Official Notice) No. (9) regarding the Eid holiday Blessed Eid al-Adha</h2>
+            <p>Lorem Ipsum is simply dummy text in the sense that its purpose is The form, not the content, is used in the printing industries The publishing house was Lorem Ipsum.</p>
           </div>
         </div>
+        
       </section>
       <footer class="main-footer-container">
         <div class="footer-copyright-container">
@@ -155,6 +149,24 @@
         infinite: true,
         dots: true,
       });
+
+      document.addEventListener("DOMContentLoaded", function() {
+      const mainPic = document.getElementById("main-pic");
+      const cards = document.querySelectorAll(".communications-announcements-card");
+
+      cards.forEach(card => {
+      const hoverImg = card.getAttribute("data-hover-img");
+
+      card.addEventListener("mouseover", function() {
+        mainPic.src = hoverImg;
+      });
+
+      card.addEventListener("mouseout", function() {
+        mainPic.src = "/Assets/Logos/Group 151.png"; 
+      });
+  });
+});
+
       
     </script>
     <script src="js/wow.min.js"></script>

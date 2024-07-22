@@ -195,13 +195,11 @@ select::-ms-expand {
 }
 .section-topic {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   color: var(--main-color);
   padding-top: 3rem;
   margin-top: 3rem;
   margin-bottom: 3rem;
+  font-size: 28px;
 }
 .MW-table-box td {
   text-align: start;
