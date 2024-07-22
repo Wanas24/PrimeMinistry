@@ -1,0 +1,162 @@
+#MeetOurTeam .page-header{
+    background-image: url(../Assets/Headers/board.png);
+}
+.sales-department-container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+}
+
+.sales-department-employees {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.sales-department-employees-card, .sales-department-ideal-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(0, 46, 97, 0.25);
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box; 
+}
+.sales-department-ideal-card{
+    background-color: #1c4573;
+    padding: 1rem;
+    background-image: url(../Assets/Img/Rectangle\ 406.png);
+    background-size: cover;
+}
+.sales-department-employees-card-content {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(0, 46, 97, 0.25);
+    width: 100%;
+    min-height: 105px;
+}
+
+.sales-department-employees-card-main-picture, .sales-department-ideal-card picture {
+    background-color: rgba(0, 46, 97, 0.05);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 270px;
+}
+.sales-department-ideal-card picture{
+    background-color: white;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.sales-department-employees-card-contact-box {
+    display: flex;
+    gap: 20px;
+    border-bottom: 1px solid rgba(0, 46, 97, 0.25);
+    width: 100%;
+    justify-content: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.sales-department-employees-card-contact-box img {
+    width: 25px;
+    height: 25px;
+}
+
+.sales-department-employees-card-contact-box span {
+    color: var(--main-color);
+    font-family: Cairo-SemiBold;
+}
+
+.sales-department-employees-card h2, .sales-department-ideal-card h2 {
+    font-size: 1.3rem;
+    text-align: center;
+}
+.sales-department-ideal-card h2{
+    color: white;
+    margin-top: 1rem;
+}
+
+.sales-department-employees-card h3, .sales-department-ideal-card h3 {
+    font-size: 1.2rem;
+    text-align: center;
+    color: var(--secondary-color);
+    font-family: "Cairo-SemiBold";
+}
+.sales-department-ideal-card picture{
+    height: 240px;
+}
+.sales-department-ideal-card picture img {
+    max-width: 100%;
+    height: auto;
+    
+}
+.meetoutteamm-last-section{
+    background-color: rgba(201, 172, 128, 0.12);
+    margin-top: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.sales-department-employees-card-content {
+    background-color: #ffffff;
+}
+.sales-department-employees-card-contact-box{
+    background-color: #ffffff;
+}
+.sales-department-employees-card-main-picture img{
+    max-width:100%;
+}
+.sales-department-ideal h4 {
+    display: none;
+    font-size: 1.5rem;
+    font-family: Cairo-Bold;
+}
+.arabic-version .sales-department-ideal h4{
+    font-size: 1.4rem;
+}
+.meetOurTeam-title h4:last-child{
+    width: 260px;
+    text-align: center;
+    margin-inline-end: 2rem;
+    font-size: 1.5rem;
+    font-family: Cairo-Bold;
+    letter-spacing: -1px;
+
+}
+.arabic-version .meetOurTeam-title h4:last-child{
+    font-size: 1.4rem;
+}
+.arabic-version .sales-department-employees-card-contact-box{
+    direction: ltr;
+}
+@media (max-width:1400px) {
+    .meetOurTeam-title h4:last-child{
+        margin-inline-end: 1rem
+    }
+}
+@media (max-width:1200px) {
+    .meetOurTeam-title h4:last-child{
+        margin-inline-end: 0
+    }
+}
+@media (max-width:990px) {
+    .sales-department-container{
+        grid-template-columns: 1fr;
+    }
+    .sales-department-employees{
+        grid-template-columns: 1fr 1fr;
+    }
+    .sales-department-ideal h4 {
+        display: block;
+    }
+    .meetOurTeam-title h4:last-child{
+        display: none;
+    }
+}
+@media (max-width:767px) {
+    .sales-department-employees{
+        grid-template-columns: 1fr;
+    }
+}

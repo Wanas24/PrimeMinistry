@@ -1,0 +1,30 @@
+#JoinOurTeam .page-header {
+  background-image: url(../Assets/Headers/Group\ 247.png);
+}
+#JoinOurTeam form{
+    width: 70%;
+}
+#JoinOurTeam h5{
+ font-size: 1.6rem;
+}
+#JoinOurTeam label{
+ font-family: Cairo-SemiBold;
+}
+
+#JoinOurTeam form input::file-selector-button {
+
+  border: #00000033 solid 1px;
+
+}
+#JoinOurTeam form div .main-btn{
+  font-size: 1.1rem;
+}
+#JoinOurTeam form .secondary-btn{
+  font-size: 1.1rem;
+}
+.arabic-version #JoinOurTeam h5{
+  font-size: 1.4rem;
+}
+.moreInfo-box{
+  margin-top: 1rem;
+}

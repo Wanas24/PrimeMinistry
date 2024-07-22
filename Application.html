@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./css/bootstrap/bootstrap.min.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="./js/slick-1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="./js/slick-1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="./css/carousel.css" />
+    <link rel="stylesheet" href="./css/owl.carousel.css" />
+    <link rel="stylesheet" href="./css/intlTelInput.css" />
+    <link href="./css/regular.css" rel="stylesheet" type="text/css" />
+    <link href="./css/solid.css" rel="stylesheet" type="text/css" />
+    <link href="./css/brands.css" rel="stylesheet" type="text/css" />
+    <link href="./css/fontawesome.css" rel="stylesheet" type="text/css" />
+    <link href="./css/styles.css" rel="stylesheet" type="text/css" />
+    <link href="./css/Application.css" rel="stylesheet" type="text/css" />
+    <link href="./css/arabic-styles.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript" src="./js/jquery-3.7.1.js"></script>
+    <script type="text/javascript" src="./js/slick-1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="./js/bootstrap/popper.min.js"></script>
+    <script type="text/javascript" src="./js/bootstrap/bootstrap.bundle.min.js"></script>
+
+    <script src="./js/carousel.umd.js"></script>
+    <script src="./js/owl.carousel.js"></script>
+    <script src="./js/intlTelInput.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <main id="Application">
+        <div class="page-header">
+            <div class="container">
+                <h2>Leasing Application</h2>
+            </div>
+        </div>
+        <section>
+            <div class="container Application-opening">
+                <h2> Dear client,</h2>
+                <p>Kindly complete the following Leasing application and our specialized personnel will contact you as
+                    soon as possible.</p>
+            </div>
+            <div class="container">
+                <form action="">
+                    <div class="d-flex flex-column w-100  align-items-start justify-content-start">
+                        <div class="pb-3">
+                            <h4>Submit Your Application</h4>
+                        </div>
+                        <div class="">
+                            <h5>Your Personal Information:</h5>
+                        </div>
+                        <div class="row w-100 px-0 g-4 pt-3 pb-5">
+                            <div class="col-lg-3 col-sm-6 col-12 d-flex flex-column custom-gap">
+                                <label for="full-name">Full Name* </label>
+                                <input type="text" name="full-name" id="full-name" placeholder=" Type here ">
+                            </div>
+                            <div class="col-lg-3 col-sm-6 col-12 d-flex flex-column custom-gap">
+                                <label for="nationality"> Nationality*</label>
+                                <select name="nationality" id="nationality" placeholder="-select-">
+                                    <option value="">Type here</option>
+                                    <option value="">Type here</option>
+                                    <option value="">Type here</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 col-12 d-flex flex-column custom-gap">
+                                <label for="country-of-residence"> Country of Residence*</label>
+                                <select type="text" name="country-of-residence" id="country-of-residence"
+                                    placeholder="-select-">
+                                    <option value="">Type here</option>
+                                    <option value="">Type here</option>
+                                    <option value="">Type here</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 col-12 d-flex flex-column custom-gap">
+                                <label for="date-of-birth"> Date of Birth* </label>
+                                <input name="date-of-birth" id="date-of-birth"
+                                    placeholder="DD/MM/YYYY">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="document-expiration-date"> Gender* </label>
+                        <div class="radio-box ">
+                            <div>
+                                <input type="radio" name="Gender">
+                                <span>Male</span>
+                            </div>
+                            <div>
+                                <input type="radio" name="Gender">
+                                <span>Female</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="">
+                        <h5>Requested Service Information:</h5>
+                    </div>
+                    <div class="row w-100 px-0 g-4 pt-3 pb-5">
+                        <div class="col-lg-3 col-sm-6 col-12 d-flex flex-column custom-gap">
+                            <label for="sector"> Sector*</label>
+                            <select name="sector" id="sector" placeholder="-select-">
+                                <option value="">Type here</option>
+                                <option value="">Type here</option>
+                                <option value="">Type here</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 col-12 d-flex flex-column custom-gap">
+                            <label for="service"> Service*</label>
+                            <select type="text" name="service" id="service"
+                                placeholder="-select-">
+                                <option value="">Type here</option>
+                                <option value="">Type here</option>
+                                <option value="">Type here</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 col-12 d-flex flex-column custom-gap">
+                            <label for="total-asset-cost">Total Asset Cost* </label>
+                            <input type="text" name="total-asset-cost" id="total-asset-cost" placeholder=" Type here ">
+                        </div>
+                        <div class="col-lg-3 col-sm-6 col-12 d-flex flex-column custom-gap">
+                            <label for="leasing-amount"> Leasing Amount* </label>
+                            <input name="leasing-amount" id="leasing-amount"
+                                placeholder="DD/MM/YYYY">
+
+                        </div>
+                    </div>
+                    <div class="">
+                        <h5>Your contact Information:</h5>
+                    </div>
+                    <div class="row w-100 px-0 g-4 pt-3 pb-5">
+                        <div class="col-lg-4 col-sm-6 col-12 d-flex flex-column custom-gap">
+                            <label for="mobile-number">Mobile Number* </label>
+                            <input type="text" name="mobile-number" id="mobile-number" placeholder=" Type here ">
+                        </div>
+                        <div class="col-lg-4 col-sm-6 col-12 d-flex flex-column custom-gap">
+                            <label for="best-time"> Best time to contact you*</label>
+                            <select type="text" name="best-time" id="best-time"
+                                placeholder="-select-">
+                                <option value="">Type here</option>
+                                <option value="">Type here</option>
+                                <option value="">Type here</option>
+                            </select>
+                        </div>                      
+                        <div class="col-lg-4 col-sm-6 col-12 d-flex flex-column custom-gap">
+                            <label for="required-documents"> Upload required documents </label>
+                            <div class="position-relative">
+                                <input name="required-documents" id="required-documents"
+                                    type="file">
+                                <label for="required-documents" class="main-btn">
+                                    <svg width="26" height="25" viewBox="0 0 26 25" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M23.1094 15.0781C22.9022 15.0781 22.7035 15.1604 22.5569 15.3069C22.4104 15.4535 22.3281 15.6522 22.3281 15.8594V18.5273C22.3281 19.1562 22.0783 19.7593 21.6336 20.204C21.189 20.6486 20.5859 20.8984 19.957 20.8984H6.36328C5.73443 20.8984 5.13133 20.6486 4.68666 20.204C4.242 19.7593 3.99219 19.1562 3.99219 18.5273V15.8594C3.99219 15.6522 3.90988 15.4535 3.76336 15.3069C3.61685 15.1604 3.41814 15.0781 3.21094 15.0781C3.00374 15.0781 2.80502 15.1604 2.65851 15.3069C2.512 15.4535 2.42969 15.6522 2.42969 15.8594V18.5273C2.43072 19.5703 2.84548 20.5702 3.58295 21.3077C4.32042 22.0451 5.32034 22.4599 6.36328 22.4609H19.957C21 22.4599 21.9999 22.0451 22.7374 21.3077C23.4748 20.5702 23.8896 19.5703 23.8906 18.5273V15.8594C23.8906 15.6522 23.8083 15.4535 23.6618 15.3069C23.5153 15.1604 23.3166 15.0781 23.1094 15.0781Z" />
+                                        <path d="M9.25365 8.32032L12.3786 5.19532V16.7969C12.3786 17.0041 12.461 17.2028 12.6075 17.3493C12.754 17.4958 12.9527 17.5781 13.1599 17.5781C13.3671 17.5781 13.5658 17.4958 13.7123 17.3493C13.8588 17.2028 13.9411 17.0041 13.9411 16.7969V5.20704L17.0661 8.33204C17.1387 8.40462 17.2249 8.4622 17.3197 8.50149C17.4146 8.54077 17.5162 8.56099 17.6189 8.56099C17.7215 8.56099 17.8232 8.54077 17.918 8.50149C18.0129 8.4622 18.099 8.40462 18.1716 8.33204C18.2442 8.25945 18.3018 8.17328 18.3411 8.07844C18.3803 7.9836 18.4006 7.88196 18.4006 7.7793C18.4006 7.67665 18.3803 7.575 18.3411 7.48017C18.3018 7.38533 18.2442 7.29916 18.1716 7.22657L13.7146 2.76954C13.606 2.6642 13.4711 2.58999 13.324 2.55469C13.1975 2.53142 13.0673 2.53878 12.9443 2.57616C12.8213 2.61354 12.709 2.67985 12.6169 2.76954L8.1599 7.21485C8.03587 7.3641 7.97182 7.55416 7.98023 7.74803C7.98863 7.94191 8.06889 8.12572 8.20538 8.26366C8.34187 8.40161 8.52481 8.48383 8.71858 8.4943C8.91235 8.50477 9.10309 8.44275 9.25365 8.32032Z" />
+                                    </svg>                                        
+                                    upload</label>
+                            </div>
+                            <div class="moreInfo-box">
+                                <picture><img src="./Assets/Icons/moreInfo.png" alt="" srcset=""></picture>
+                                <span>More information</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="g-recaptcha" data-theme="light" data-sitekey="XXXXXXXXXXXXX" ></div>
+                    <button type="submit" class="secondary-btn mt-4">submit</button>
+                </form>
+
+            </div>
+        </section>
+
+
+    </main>
+
+    <script></script>
+</body>
+
+</html>

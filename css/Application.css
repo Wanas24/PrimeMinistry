@@ -1,0 +1,29 @@
+#Application .page-header{
+    background-image: url(../Assets/Headers/Group\ 250.png);
+}
+.Application-opening h2{
+    font-size: 1.5rem;
+}
+.Application-opening p{
+    font-size: 1.1rem;
+    font-family: Cairo-SemiBold;
+}
+#Application form h4{
+    font-size: 1.6rem;
+}
+#Application .moreInfo-box {
+    margin-top: 0.8rem;
+}
+#Application form h5{
+    font-size: 1.4rem;
+}
+#Application form input::file-selector-button{
+    color: #000;
+}
+#Application form input::file-selector-button:hover{
+    color: white;
+}
+#Application form div .main-btn{
+    font-family: Cairo-SemiBold;
+    font-size: 1.1rem;
+}
