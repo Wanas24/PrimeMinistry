@@ -18,6 +18,9 @@
   transform: translateX(-30rem);
   transition: all 0.7s ease-in-out;
 }
+.arabic-version .home-hero-slider-dark-box{
+  transform: translateX(30rem);
+}
 .home-hero-slider-section .slick-slide:hover .home-hero-slider-dark-box{
   transform: unset;
 }
@@ -27,11 +30,18 @@
 }
 .home-hero-slider-dark-box p {
   display: block;
+  font-size: 22px;
+  line-height: 38px;
+  margin-bottom: 2.5rem;
+  text-align: justify;
 }
 .home-hero-slider-dark-box img{
   height: 40px;
   width: 40px;
   transform: scaleX(-1);
+}
+.arabic-version .home-hero-slider-dark-box img{
+  transform: unset;
 }
 .home-hero-slider-dark-box a{
   display: flex;
@@ -46,6 +56,71 @@
   color: white;
 }
 
+.home-hero-slider-section .slick-slide {
+  overflow: hidden;
+}
 .home-hero-slider-section .slick-dots {
   bottom: 40px;
+}
+.home-hero-slider-section .slick-dots li {
+  width: 50px;
+  height: 12px;
+  
+}
+.home-hero-slider-section .slick-dots li button{
+  width: 100%;
+  border-radius: 0;
+  height: 21px;
+}
+.home-hero-slider-section .slick-dots li button::before{
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-color: #FFFFFF99;
+  border-radius: 10px;
+  opacity: 1;
+}
+.slick-dots li.slick-active button:before{
+  background-color: var(--main-color);
+}
+
+.communications-announcements-section {
+  background-color: #F2F5F6;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.communications-announcements-section .container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+}
+.communications-announcements-main-pic img{
+  width: 100%;
+  object-fit: contain;
+}
+.communications-announcements-card h2{
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 31px;
+}
+.communications-announcements-card p{
+  color: #03375080;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+}
+.communications-announcements-card img {
+  margin-bottom: 2rem;
+  position: relative;
+}
+.communications-announcements-card img::after {
+  content: "";
+  width: 95px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: var(--main-color);
+  position: absolute;
+  top: 0;
+  left: 0;
 }
