@@ -405,4 +405,83 @@ form textarea {
 
 
 
+/* =================================> */
 
+
+.fancybox__content{
+width: 50vw !important;
+max-width: 500px;
+height: 60vh !important;
+}
+.fancybox-image {
+width: 100%;
+height: 100%;
+}
+
+/* .fancybox__content{
+  width: 50vw !important;
+  height: 50vh !important;
+} */
+.f-button[title="Close"] {
+  position: absolute;
+  top: 200px;
+  right: unset;
+  margin-inline: auto;
+  /* right: 40%; */
+  inset-inline-end: 40%;
+  width: 40px;
+  height: 40px;
+  background: #B1854F;
+  border-radius: 100%;
+}
+.f-button[title="Close"]:hover{
+  background: #B1854F;
+}
+.f-button svg {
+stroke-width: 2.5px;
+width: 20px;
+height: 20px;
+}
+  .fancybox__toolbar__column.is-right {
+position: relative;
+}
+.f-button.is-prev, .is-horizontal .fancybox__nav .f-button.is-prev{
+  right: unset;
+  left: unset;
+  inset-inline-start: 0;
+  height: 39px;
+  width: 39px;
+  border: 1px solid #fff;
+
+}
+
+.f-button.is-next, .is-horizontal .fancybox__nav .f-button.is-next{
+right: unset;
+left: unset;
+  inset-inline-end: 0;
+  border: 1px solid #fff;
+  width: 39px;
+  height: 39px;
+}
+
+.fancybox__nav .f-button:before {
+  width: 100%;
+  display: none;
+  height: 100%;
+}
+.fancybox__carousel {
+  justify-content: center;
+  display: flex;}
+
+  .fancybox__nav{
+    display: block;
+    margin-inline: auto;
+    width: 70vw;
+    max-width: 700px;
+    /* height: 200px; */
+    position: absolute;
+    top: 50%; 
+
+  }
+    /* margin-left: 25%;
+  }
