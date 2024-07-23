@@ -19,18 +19,18 @@
   --accordion-button-background-color: #015184;
   --director-card-background-color: #01518412;
 }
-@media (max-width:991px) {
-  html{
+@media (max-width: 991px) {
+  html {
     font-size: 15px;
   }
 }
-@media (max-width:768px) {
-  html{
+@media (max-width: 768px) {
+  html {
     font-size: 14px;
   }
 }
-@media (max-width:576px) {
-  html{
+@media (max-width: 576px) {
+  html {
     font-size: 13px;
   }
 }
@@ -39,7 +39,7 @@
 @font-face {
   font-family: "Cairo-light";
   src: url("../fonts/EN Font/Cairo\ Light\ 300.ttf");
-} 
+}
 @font-face {
   font-family: "Cairo-extra-light";
   src: url("../fonts/EN Font/Cairo\ ExtraLight\ 275.ttf");
@@ -90,12 +90,10 @@ h5 {
 .arabic-version li {
   font-family: Cairo-bold;
   letter-spacing: -1px;
-
 }
 .arabic-version h3 {
   font-family: Cairo-SemiBold;
   letter-spacing: -0.1px;
-
 }
 .arabic-version h1,
 .arabic-version h2,
@@ -156,10 +154,10 @@ select::-ms-expand {
   color: #fff;
   font-size: 40px;
 }
-.arabic-version .page-header .container h2{
+.arabic-version .page-header .container h2 {
   font-size: 36px;
 }
-@media (max-width:767px) {
+@media (max-width: 767px) {
   .page-header .container h2 {
     font-size: 33px;
   }
@@ -200,13 +198,12 @@ select::-ms-expand {
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
-.section-topic h2{
+.section-topic h2 {
   font-size: 28px;
 }
 .MW-table-box td {
   text-align: start;
 }
-
 
 /* pagination */
 
@@ -272,12 +269,11 @@ select::-ms-expand {
   .research-report-pagination .page-item.active .page-link {
     width: 35px;
     height: 35px;
-
   }
 }
-@media(max-width:400px){
-  .research-report-pagination nav ul{
-    gap: .5rem;
+@media (max-width: 400px) {
+  .research-report-pagination nav ul {
+    gap: 0.5rem;
   }
 }
 
@@ -398,26 +394,16 @@ form textarea {
   }
 }
 
-
-
-
-
-
-
-
-
-
 /* =================================> */
 
-
-.fancybox__content{
-width: 50vw !important;
-max-width: 500px;
-height: 60vh !important;
+.fancybox__content {
+  width: 50vw !important;
+  max-width: 500px;
+  height: 60vh !important;
 }
 .fancybox-image {
-width: 100%;
-height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 /* .fancybox__content{
@@ -433,33 +419,34 @@ height: 100%;
   inset-inline-end: 40%;
   width: 40px;
   height: 40px;
-  background: #B1854F;
+  background: #b1854f;
   border-radius: 100%;
 }
-.f-button[title="Close"]:hover{
-  background: #B1854F;
+.f-button[title="Close"]:hover {
+  background: #b1854f;
 }
 .f-button svg {
-stroke-width: 2.5px;
-width: 20px;
-height: 20px;
+  stroke-width: 2.5px;
+  width: 20px;
+  height: 20px;
 }
-  .fancybox__toolbar__column.is-right {
-position: relative;
+.fancybox__toolbar__column.is-right {
+  position: relative;
 }
-.f-button.is-prev, .is-horizontal .fancybox__nav .f-button.is-prev{
+.f-button.is-prev,
+.is-horizontal .fancybox__nav .f-button.is-prev {
   right: unset;
   left: unset;
   inset-inline-start: 0;
   height: 39px;
   width: 39px;
   border: 1px solid #fff;
-
 }
 
-.f-button.is-next, .is-horizontal .fancybox__nav .f-button.is-next{
-right: unset;
-left: unset;
+.f-button.is-next,
+.is-horizontal .fancybox__nav .f-button.is-next {
+  right: unset;
+  left: unset;
   inset-inline-end: 0;
   border: 1px solid #fff;
   width: 39px;
@@ -473,17 +460,270 @@ left: unset;
 }
 .fancybox__carousel {
   justify-content: center;
-  display: flex;}
+  display: flex;
+}
 
-  .fancybox__nav{
+.fancybox__nav {
+  display: block;
+  margin-inline: auto;
+  width: 70vw;
+  max-width: 700px;
+  /* height: 200px; */
+  position: absolute;
+  top: 50%;
+}
+
+/* =======================> */
+.government-strategies {
+  display: flex;
+  /* align-items: center; */
+  padding-block: 3rem;
+}
+.government-strategies-section {
+  padding-block: 3rem;
+}
+.government-strategies > h5 {
+  background-color: #f2f5f6;
+  padding-top: 2.15rem;
+  padding-bottom: 7rem;
+  padding-inline-start: 0.75rem;
+  padding-inline-end: 5rem;
+  max-width: 70ch;
+}
+.government-strategies--title {
+  height: max-content;
+  margin-top: 10%;
+  position: relative;
+}
+.government-strategies--title h5 {
+  position: relative;
+  z-index: 2;
+  padding-bottom: 4rem;
+}
+
+.government-strategies-section .slick-prev,
+.government-strategies-section .slick-next {
+  width: 2rem;
+z-index: 5;
+top: 60%;
+  border-radius: 100%;
+  aspect-ratio: 1;
+  height: 2rem;
+  border: 1px solid #033750;
+}
+.government-strategies-section .slick-prev {
+  background-repeat: no-repeat;
+  background-size: 0.5rem;
+  background-position: center;
+  background-image: url("../Assets/Icons/government-strategies-arrow-left.svg");
+}
+
+.government-strategies-section .slick-next {
+  background-repeat: no-repeat;
+  background-size: 0.5rem;
+  background-position: center;
+  background-image: url("../Assets/Icons/government-strategies-arrow-right.svg");
+}
+.government-strategies-section .slick-prev::before,
+.government-strategies-section .slick-next::before {
+  display: none;
+}
+
+.government-strategies--title::after {
+  position: absolute;
+  content: "";
+  width: 250%;
+  top: -25%;
+  inset-inline-start: 0;
+  height: 150%;
+  background-color: #f2f5f6;
+}
+.government-strategies-slider-containers {
+  width: calc(100%);
+}
+
+.government-strategies-slider-container .slick-track {
+  margin-inline: 0;
+  min-height: 450px;
+  display: flex;
+  gap: 1.5rem;
+}
+.government-strategies-slider-container .government-strategies-slider--card {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  /* min-height: 300px; */
+  overflow: hidden;
+border-radius: 20px;
+}
+
+.government-strategies-slider-container
+  .slick-list.draggable
+  .slick-track
+  .government-strategies-slider--card:nth-child(3n - 1) {
+  transform: translateY(50px);
+}
+
+.government-strategies-slider-container
+  .government-strategies-slider--card
+  .flipping-card--front h6{
+position: absolute;
+padding-right: .5rem;
+bottom: 5%;
+z-index: 10;
+color: #fff;
+left: 7.5%;
+  }
+.government-strategies-slider-container
+  .government-strategies-slider--card
+  .flipping-card--front
+  img {
+  width: 100%;
+  height: 100%;
+}
+.government-strategies-slider-container
+  .government-strategies-slider--card
+  .flipping-card--front::after {
+    background: linear-gradient(0deg, #093A62 0%, rgba(9, 58, 98, 0) 100%);
+
+    top: 0;
+    left: 0;
     display: block;
-    margin-inline: auto;
-    width: 70vw;
-    max-width: 700px;
-    /* height: 200px; */
     position: absolute;
-    top: 50%; 
+    content: "";
+    width: 100%;
+    height: 100%;
+  }
+.government-strategies-slider-container
+  .government-strategies-slider--card
+  .flipping-card--front {
+  transition: all 0.5s ease-out;
+  transform: perspective(600px) rotateY(0deg);
+  backface-visibility: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.government-strategies-slider-container
+  .government-strategies-slider--card
+  .flipping-card--back {
+  position: absolute;
+  backface-visibility: hidden;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s ease-out;
+  transform: perspective(600px) rotateY(180deg);
+}
+.government-strategies-slider-container
+  .government-strategies-slider--card
+  .flipping-card--back img{
 
+    width: 100%;
+    height: 100%;
   }
-    /* margin-left: 25%;
+.government-strategies-slider-container
+  .government-strategies-slider--card
+  .flipping-card--front
+  img {
+  width: 100%;
+}
+
+.government-strategies-slider-container
+  .government-strategies-slider--card:hover
+  .flipping-card--front {
+  transition: all 0.5s ease-out;
+  transform: perspective(600px) rotateY(180deg);
+}
+.government-strategies-slider-container
+  .government-strategies-slider--card:hover
+  .flipping-card--back {
+  transition: all 0.5s ease-out;
+  transform: perspective(600px) rotateY(360deg);
+}
+@media (min-width: 576px) {
+  .government-strategies-section .slick-next {
+    inset-inline-start: calc(
+      ((100vw - 540px) - (0.5 * (100vw - 540px))  - 4rem) * -1
+    );
   }
+  .government-strategies-section .slick-prev {
+    inset-inline-start: calc(
+      ((100vw - 540px) - (0.5 * (100vw - 540px))  + 1.75rem) * -1
+    );
+  }
+  .government-strategies--title::after {
+    padding-inline-start: calc(
+     ( (100vw - 540px) - (0.5 * (100vw - 540px)) + 0.75rem) * -1
+    );
+  }
+}
+@media (min-width: 767px) {
+  .government-strategies-section .slick-next {
+    inset-inline-start: calc(
+      ((100vw - 720px) - (0.5 * (100vw - 720px)) - 4rem) * -1
+    );
+  }
+  .government-strategies-section .slick-prev {
+    inset-inline-start: calc(
+      ((100vw - 720px) - (0.5 * (100vw - 720px)) + 1.75rem) * -1
+    );
+  }
+
+  .government-strategies--title::after {
+    padding-inline-start: calc(
+      ((100vw - 720px) - (0.5 * (100vw - 720px)) + 0.75rem) * -1
+    );
+  }
+}
+@media (min-width: 992px) {
+  .government-strategies-section .slick-next {
+    padding-inline-start: calc(
+      ((100vw - 960px) - (0.5 * (100vw - 960px)) - 4rem) * -1
+    );
+  }
+  .government-strategies-section .slick-prev {
+    padding-inline-start: calc(
+      ((100vw - 960px) - (0.5 * (100vw - 960px)) + 1.75rem) * -1
+    );
+  }
+
+  .government-strategies--title::after {
+    padding-inline-start: calc(
+      ((100vw - 960px) - (0.5 * (100vw - 960px)) + 0.75rem) * -1
+    );
+  }
+}
+@media (min-width: 1200px) {
+  .government-strategies-section .slick-next {
+    padding-inline-start: calc(
+      ((100vw - 1140px) - (0.5 * (100vw - 1140px)) - 4rem) * -1
+    );
+  }
+  .government-strategies-section .slick-prev {
+    padding-inline-start: calc(
+      ((100vw - 1140px) - (0.5 * (100vw - 1140px)) + 1.75rem) * -1
+    );
+  }
+  .government-strategies--title::after {
+    padding-inline-start: calc(
+      ((100vw - 1140px) - (0.5 * (100vw - 1140px)) + 0.75rem) * -1
+    );
+  }
+}
+@media (min-width: 1400px) {
+  .government-strategies-section .slick-next {
+    inset-inline-start: calc(
+      ((100vw - 1320px) - (0.5 * (100vw - 1320px)) - 15rem) * -1
+    );
+  }
+  .government-strategies-section .slick-prev {
+    inset-inline-start: calc(
+      ((100vw - 1320px) - (0.5 * (100vw - 1320px)) - 12rem) * -1
+    );
+  }
+  .government-strategies--title::after {
+    inset-inline-start: calc(
+      ((100vw - 1320px) - (0.5 * (100vw - 1320px)) + 0.75rem) * -1
+    );
+  }
+}
