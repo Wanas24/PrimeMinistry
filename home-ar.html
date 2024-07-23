@@ -95,7 +95,80 @@
           </div>
         </div>
       </section>
-      
+      <section class="communications-announcements-section">
+        <div class="container section-topic">
+          <picture>
+            <img src="./Assets/Icons/Star 2.svg" alt="">
+          </picture>
+          <h2>بلاغات رسمية وإعلانات</h2>
+        </div>
+        <div class="container communications-announcements-container">
+          <picture class="communications-announcements-main-pic">
+            <img
+              id="main-pic"
+              src="/Assets/Logos/Group 151.png"
+              alt=""
+              srcset=""
+            />
+          </picture>
+          <div
+            class="communications-announcements-card"
+            data-hover-img="/Assets/Icons/contract 1.png"
+          ><div>
+            <picture>
+              <img src="/Assets/Icons/contract 1.png" alt="" srcset="" />
+            </picture>
+            <h2>
+              (بلاغ رسمي) رقم (9) بخصوص عطلة عيد
+
+            </h2>
+          </div>
+            <p>
+              لوريم إيبسوم هو ببساطة نص شكلي بمعنى أن الغاية هي
+الشكل وليس المحتوى ويُستخ
+             
+            </p>
+          </div>
+          <div
+            class="communications-announcements-card"
+            data-hover-img="/Assets/Icons/Job Vacancy - 4 1.png"
+          >
+          <div>
+            <picture>
+              <img src="/Assets/Icons/Job Vacancy - 4 1.png" alt="" srcset="" />
+            </picture>
+            <h2>
+              (بلاغ رسمي) رقم (9) بخصوص عطلة عيد
+الأضحى المبارك
+            </h2>
+          </div>
+            <p>
+              لوريم إيبسوم هو ببساطة نص شكلي بمعنى أن الغاية هي
+              الشكل وليس المحتوى ويُستخدم في صناعات المطابع
+              ودور النشر كان لوريم إيبسوم.
+            </p>
+          </div>
+          <div
+            class="communications-announcements-card"
+            data-hover-img="/Assets/Icons/vacation - 2 1.png"
+          >
+          <div>
+            <picture>
+              <img src="/Assets/Icons/vacation - 2 1.png" alt="" srcset="" />
+            </picture>
+            <h2>
+              (بلاغ رسمي) رقم (9) بخصوص عطلة عيد
+الأضحى المبارك
+            </h2>
+          </div>
+            <p>
+              لوريم إيبسوم هو ببساطة نص شكلي بمعنى أن الغاية هي
+الشكل وليس المحتوى ويُستخدم في صناعات المطابع
+ودور النشر كان لوريم إيبسوم.
+            </p>
+          </div>
+        </div>
+      </section>
         
       </section>
  
@@ -149,6 +222,24 @@
             },
           },
         ],
+      });
+      document.addEventListener("DOMContentLoaded", function () {
+        const mainPic = document.getElementById("main-pic");
+        const cards = document.querySelectorAll(
+          ".communications-announcements-card"
+        );
+
+        cards.forEach((card) => {
+          const hoverImg = card.getAttribute("data-hover-img");
+
+          card.addEventListener("mouseover", function () {
+            mainPic.src = hoverImg;
+          });
+
+          card.addEventListener("mouseout", function () {
+            mainPic.src = "/Assets/Logos/Group 151.png";
+          });
+        });
       });
     </script>
       <script src="js/wow.min.js"></script>

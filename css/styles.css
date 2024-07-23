@@ -199,6 +199,8 @@ select::-ms-expand {
   padding-top: 3rem;
   margin-top: 3rem;
   margin-bottom: 3rem;
+}
+.section-topic h2{
   font-size: 28px;
 }
 .MW-table-box td {

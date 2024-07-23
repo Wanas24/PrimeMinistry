@@ -9,6 +9,9 @@
 .home-hero-slider-section .slick-slide{
   position: relative;
 }
+.home-hero-slider-section .slick-track{
+  height: 100vh;
+}
 .home-hero-slider-dark-box{
   background-color: #00000066;
   color: white;
@@ -19,11 +22,11 @@
   bottom: 6rem;
   padding: 2rem;
   border-radius: 5px;
-  transform: translateX(-30rem);
+  transform: translateX(-150%);
   transition: all 0.7s ease-in-out;
 }
 .arabic-version .home-hero-slider-dark-box{
-  transform: translateX(30rem);
+  transform: translateX(150%);
 }
 .home-hero-slider-section .slick-slide:hover .home-hero-slider-dark-box{
   transform: unset;
@@ -67,7 +70,7 @@
   bottom: 40px;
 }
 .home-hero-slider-section .slick-dots li {
-  width: 50px;
+  width: 40px;
   height: 7px;
   
 }
@@ -103,10 +106,17 @@
   width: 100%;
   object-fit: contain;
 }
+.communications-announcements-card{
+  display: flex;
+  flex-direction: column;
+ 
+  height: 100%;
+}
 .communications-announcements-card h2{
   font-size: 19px;
   font-weight: 500;
   line-height: 31px;
+  min-height: 65px;
 }
 .communications-announcements-card p{
   color: #03375080;
@@ -132,8 +142,73 @@
   bottom: -0.9rem;
   left: 0;
 }
+.arabic-version .communications-announcements-card picture::after{
+  left: unset;
+  right: 0;
+}
 @media (max-width:991px) {
   .communications-announcements-section .communications-announcements-container{
     grid-template-columns: 1fr 1fr;
   }
+  .home-hero-slider-section .slick-track{
+    height: 80vh;
+  }
+}
+
+
+
+/* Latest news section  */
+.latest-news-container{
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr ;
+  gap: 20px;
+  margin-bottom: 3rem;
+}
+.latest-news-card img{
+  width: 100%;
+  border-radius: 20px;
+}
+.latest-news-card{
+  position: relative;
+}
+.latest-news-card-last{
+  position: absolute;
+  bottom: 0;
+  height: 28%;
+  background-color: #033750;
+  opacity: 0.8;
+  padding: 1rem;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  transition: top 2s ease-in-out, bottom 2s ease-in-out;
+}
+.latest-news-card-last h4{
+  color: white;
+  font-size: 19px;
+}
+.latest-news-card:hover .latest-news-card-last{
+  bottom: unset;
+  top: 0;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.latest-news-card-content{
+  position: absolute;
+  bottom: 0;
+  height: 72%;
+  background-color: #033750;
+  opacity: 0.8;
+  padding: 1rem;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: none;
+}
+.latest-news-card-content p{
+  color: white;
+  font-size: ;
+}
+.latest-news-card:hover .latest-news-card-content{
+  display: block;
 }
