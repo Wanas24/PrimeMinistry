@@ -229,6 +229,46 @@
           </div>
         </div>
       </section>
+      <section class="useful-links-section">
+        <div class="container useful-links-slider">
+          <div class="useful-links-card">
+            <picture>
+              <img src="./Assets/Icons/management 1.png" alt="" srcset="">
+            </picture>
+            <h2>Ministerial Committee for Women's Empowerment</h2>
+            <p>Learn about the agencies affiliated with the Prime Minister that play a vital role in implementing...
+              Government plans and following up on their implementation on the ground.</p>
+              <a href=""> Read more</a>
+            </div>
+          <div class="useful-links-card">
+            <picture>
+              <img src="./Assets/Icons/management 1.png" alt="" srcset="">
+            </picture>
+            <h2>Ministerial Committee for Women's Empowerment</h2>
+            <p>Learn about the agencies affiliated with the Prime Minister that play a vital role in implementing...
+              Government plans and following up on their implementation on the ground.</p>
+              <a href=""> Read more</a>
+            </div>
+          <div class="useful-links-card">
+            <picture>
+              <img src="./Assets/Icons/management 1.png" alt="" srcset="">
+            </picture>
+            <h2>Ministerial Committee for Women's Empowerment</h2>
+            <p>Learn about the agencies affiliated with the Prime Minister that play a vital role in implementing...
+              Government plans and following up on their implementation on the ground.</p>
+              <a href=""> Read more</a>
+            </div>
+          <div class="useful-links-card">
+            <picture>
+              <img src="./Assets/Icons/management 1.png" alt="" srcset="">
+            </picture>
+            <h2>Ministerial Committee for Women's Empowerment</h2>
+            <p>Learn about the agencies affiliated with the Prime Minister that play a vital role in implementing...
+              Government plans and following up on their implementation on the ground.</p>
+              <a href=""> Read more</a>
+            </div>
+        </div>
+      </section>
       <footer class="main-footer-container">
         <div class="footer-copyright-container">
           <div class="footer-copyright-container-centered">
@@ -291,6 +331,29 @@
             mainPic.src = "/Assets/Logos/Group 151.png";
           });
         });
+      });
+
+      $(".useful-links-slider").slick({
+        arrows: true,
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        responsive: [
+          
+          {
+            breakpoint: 990,
+            settings: {
+              slidesToShow: 2,
+            },
+          },
+
+          {
+            breakpoint: 767,
+            settings: {
+              slidesToShow: 1,
+            },
+          },
+        ],
       });
     </script>
     <script src="js/wow.min.js"></script>
