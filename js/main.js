@@ -16,19 +16,20 @@ $(document).ready(function () {
 
   // Check hover state on window resize
   $(window).resize(checkHover);
-     var referenceElement = $('.first-navigation');
-    var targetElement = $('.flying-navigation');
+     var targetElement = $('.flying-navigation');
 
 
         // Function to update opacity based on scroll position
         function updateOpacity() {
-          if ($(window).scrollTop() >= (referenceElement.offset().top + referenceElement.outerHeight() / 2) + 10) {
-              targetElement.css('opacity', '1');
-              targetElement.css('z-index', '1000000');
-
-          } else {
-              targetElement.css('opacity', '0');
-              targetElement.css('z-index', '10000');
+          if ($(window).scrollTop() > 0) {
+              // targetElement.css('background-color', '#fff');
+              targetElement.addClass("navigation-scrolled")
+              // targetElement.css('z-index', '1000000');
+              
+            } else {
+              // targetElement.css('background-color', 'transparent');
+              targetElement.removeClass("navigation-scrolled")
+              // targetElement.css('z-index', '10000');
 
           }
       }
@@ -78,10 +79,6 @@ $(document).ready(function () {
   $(this).find(".fa-plus").show();
   $(this).find(".fa-minus").hide();
 
-  $("#cssmenu").menumaker({
-    title: "",
-    format: "multitoggle",
-  });
 
   $(".cssmenu2").menumaker({
     title: "",

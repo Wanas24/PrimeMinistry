@@ -114,6 +114,7 @@ body.arabic-version #cssmenu > ul > li:hover:before {
 }
 #cssmenu > ul > li:hover > a {
   color: #c9ac80;
+  background: #0000004D;
 }
 #cssmenu li:hover > ul > li a:before {
   display: none;
@@ -161,13 +162,19 @@ body.arabic-version #cssmenu > ul > li.has-sub > a::after {
 #cssmenu ul ul {
   position: absolute;
   inset-inline-start: -9999px;
-  background-color: #fff;
+  /* background-color: #fff; */
+  background-color: #0000004D;
+
   z-index: 999;
   border-radius: 0px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius:10px ;
   top: 100%;
 }
 
-
+#cssmenu ul li.has-sub>  ul{
+  border-end-end-radius: 0;
+}
 #cssmenu.align-right ul ul {
   text-align: right;
 }
@@ -179,9 +186,6 @@ body.arabic-version #cssmenu > ul > li.has-sub > a::after {
   -o-transition: all 0.25s ease;
   transition: all 0.25s ease;
 }
-#cssmenu ul ul {
-  border-top: 5px solid #c9ac80;
-}
 
 #cssmenu ul ul > li.has-sub:hover::after {
   position: absolute;
@@ -191,7 +195,7 @@ body.arabic-version #cssmenu > ul > li.has-sub > a::after {
   top: 0;
   inset-inline-end: -2px;
   z-index: 5000;
-  background: #002e6140;
+  background: #ffffff3d;
 }
 #cssmenu > ul > li.has-sub > ul > li:hover ul {
   border-top: unset;
@@ -226,7 +230,7 @@ body.arabic-version #cssmenu > ul > li.has-sub > a::after {
 }
 #cssmenu ul ul ul {
   margin-inline-start: 100%;
-  top: -5px;
+  top: 0px;
 }
 #cssmenu.align-right ul ul ul {
   margin-left: 0;
@@ -289,41 +293,54 @@ body.arabic-version #cssmenu > ul > li.has-sub > a::after {
   height: 0;
 }
 @media (min-width: 1200px) {
+  .navigation-scrolled  ul > li:hover > a {
+    color: #fff !important;
+  }
+  .navigation-scrolled  #cssmenu > ul > li i{
+    transition: all 0.3s ease-out;
+  }
+  .navigation-scrolled  #cssmenu ul li:hover  a {
+    color: #fff !important;
+  }
+
+  .navigation-scrolled  #cssmenu > ul > li:hover i{
+    color: #fff !important;
+    transition: all 0.3s ease-out;
+  }
   #cssmenu ul ul:hover {
-    border-top: 5px solid transparent;
+    /* border-top: 5px solid transparent; */
   }
   #cssmenu ul ul li:hover > a,
   #cssmenu ul ul li a:hover {
-    color: #002e61;
+    color: #c9ac80;
 
-    background: linear-gradient(
-      90deg,
-      rgba(201, 172, 128, 0.3) 0%,
-      rgba(201, 172, 128, 0) 100%
-    );
+
     border-left: none;
     border-inline-start: 5px solid #c9ac80 !important;
   }
 .arabic-version  #cssmenu ul ul li:hover > a,
 .arabic-version  #cssmenu ul ul li a:hover {
     color: #002e61;
-    background: linear-gradient(
-      270deg,
-      rgba(201, 172, 128, 0.3) 0%,
-      rgba(201, 172, 128, 0) 100%
-    );
+    
     border-left: none;
     border-inline-start: 5px solid #c9ac80 !important;
   }
   #cssmenu > ul > li.has-sub > ul > li:hover ul {
-    border-top: 5px solid #c9ac80;
+    /* border-top: 5px solid #c9ac80; */
+    border-start-end-radius: 10px;
+    border-end-end-radius: 10px;
   }
+  #cssmenu > ul > li.has-sub > ul > li,
   #cssmenu > ul > li.has-sub > ul > li.has-sub > ul > li {
-    border-bottom: 1px solid #002e6140;
+    border-bottom: 1px solid #FFFFFF40;
+  }
+  #cssmenu > ul > li.has-sub > ul > li:last-child,
+  #cssmenu > ul > li.has-sub > ul > li.has-sub > ul > li:last-child {
+    border-bottom: 0;
   }
   #cssmenu > ul > li.has-sub > ul li ul li:hover > a,
   #cssmenu > ul > li.has-sub > ul li ul a:hover {
-    border-inline-start: 5px solid rgba(201, 172, 128, 0.3) !important;
+    border-inline-start: 5px solid #c9ac80 !important;
   }
 }
 
@@ -385,7 +402,7 @@ body.arabic-version #cssmenu > ul > li.has-sub > a::after {
 #cssmenu.small-screen #menu-button {
   display: block;
   padding: 10px;
-  color: #1b1b1b;
+  color: var(--main-color);
   cursor: pointer;
   font-size: 12px;
   text-transform: uppercase;
@@ -410,8 +427,8 @@ body.arabic-version #cssmenu > ul > li.has-sub > a::after {
   display: block;
   height: 8px;
   width: 15px;
-  border-top: 2px solid #000;
-  border-bottom: 2px solid #000;
+  border-top: 2px solid var(--main-color);
+  border-bottom: 2px solid var(--main-color);
   content: "";
 }
 #cssmenu.small-screen #menu-button:before {
@@ -421,7 +438,7 @@ body.arabic-version #cssmenu > ul > li.has-sub > a::after {
   display: block;
   height: 2px;
   width: 15px;
-  background: #000;
+  background: var(--main-color);
   content: "";
 }
 #cssmenu.small-screen #menu-button.menu-opened:after {
@@ -429,7 +446,7 @@ body.arabic-version #cssmenu > ul > li.has-sub > a::after {
   border: 0;
   height: 2px;
   width: 17px;
-  background: #000;
+  background: var(--main-color);
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
@@ -439,7 +456,7 @@ body.arabic-version #cssmenu > ul > li.has-sub > a::after {
 }
 #cssmenu.small-screen #menu-button.menu-opened:before {
   top: 15px;
-  background: #000;
+  background: var(--main-color);
   width: 17px;
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
@@ -570,11 +587,11 @@ body.arabic-version #cssmenu ul ul li a {
 }
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
   #cssmenu {
-    background: #fff !important;
+    /* background: #fff !important; */
   }
-  #cssmenu {
-    background: #fff;
-  }
+.flying-navigation {
+background: #fff;
+}
   #cssmenu > ul > li > a {
     padding: 15px 17px;
     color: #002e61 !important;
@@ -582,7 +599,7 @@ body.arabic-version #cssmenu ul ul li a {
     margin: 0;
   }
   #cssmenu ul ul {
-    border-top: 0px solid #e9931a;
+
     margin: 0;
   }
   .col-md-8.col-lg-8.topbar_bottm {
@@ -602,7 +619,7 @@ body.arabic-version #cssmenu ul ul li a {
   #cssmenu.small-screen:not(.upper) > ul {
     width: calc(100%);
     left: 0;
-    top: calc(100% + 2px);
+    top: 100%;
   }
   #cssmenu > ul > li::after {
     display: none;
@@ -692,8 +709,8 @@ body.arabic-version #cssmenu ul ul li a {
     width: calc(100% - 10vw);
   }
   #cssmenu.small-screen:not(.upper) > ul {
-    width: calc(100%);
-    left: 0;
+    width: 100vw;
+    left: -11px;
   }
   #cssmenu > ul > li::after {
     display: none;
@@ -758,13 +775,14 @@ body.arabic-version #cssmenu ul ul li a {
   #cssmenu.small-screen #menu-button {
     top: 20%;
   }
-  #cssmenu.small-screen:not(.upper) #menu-button {
+  /* #cssmenu.small-screen:not(.upper) #menu-button {
     inset-inline-end: 1rem;
     top: 22%;
-  }
+  } */
   #cssmenu.small-screen > ul {
     /* top: 0; */
-    width: 100%;
-    left: 0;
+    width: 100vw;
+    left: -13px !important;
+    top: 100%;
   }
-}
+  }

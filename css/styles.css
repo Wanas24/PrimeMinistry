@@ -60,6 +60,10 @@
   font-family: "Cairo-black";
   src: url("../fonts/EN Font/Cairo\ Black\ 900.ttf");
 }
+@font-face {
+  font-family: "DIN-NEXT-MEDIUM";
+  src: url("../fonts/DIN-NEXT-LT-W23-MEDIUM.otf");
+}
 
 p,
 a,
@@ -67,19 +71,19 @@ label,
 th,
 td,
 li {
-  font-family: "Cairo-bold";
+  font-family: "DIN-NEXT-MEDIUM";
 }
 
 h3 {
   color: var(--main-color);
-  font-family: Cairo-bold;
+  font-family: DIN-NEXT-MEDIUM;
 }
 h1,
 h2,
 h4,
 h5 {
   color: var(--main-color);
-  font-family: Cairo-bold;
+  font-family: DIN-NEXT-MEDIUM;
 }
 
 .arabic-version p,
@@ -88,18 +92,18 @@ h5 {
 .arabic-version th,
 .arabic-version td,
 .arabic-version li {
-  font-family: Cairo-bold;
+  font-family: DIN-NEXT-MEDIUM;
   letter-spacing: -1px;
 }
 .arabic-version h3 {
-  font-family: Cairo-SemiBold;
+  font-family: DIN-NEXT-MEDIUM;
   letter-spacing: -0.1px;
 }
 .arabic-version h1,
 .arabic-version h2,
 .arabic-version h4,
 .arabic-version h5 {
-  font-family: Cairo-bold;
+  font-family: DIN-NEXT-MEDIUM;
   letter-spacing: -1px;
 }
 
@@ -758,7 +762,7 @@ position: absolute;
   .flipping-card--back
   .flipping-card-back--inner-links a{
     position: relative;
-    z-index: 115;
+    z-index: 5;
     border-radius: 30px;
     overflow: hidden;
     text-decoration: none;
