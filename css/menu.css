@@ -52,7 +52,7 @@
   height: 8px;
   width: 100%;
   right: 0px;
-  background-color: #c9ac80;
+  background-color: var(--navigaion-active-color);
   bottom: 0rem;
 }
 
@@ -62,7 +62,7 @@
   height: 8px;
   width: 100%;
   right: 0px;
-  background-color: #c9ac80;
+  background-color: var(--navigaion-active-color);
   bottom: 0rem;
 }
 #cssmenu > ul > li a.active ul:hover a::before {
@@ -113,7 +113,7 @@ body.arabic-version #cssmenu > ul > li:hover:before {
   padding: 1rem 0px;
 }
 #cssmenu > ul > li:hover > a {
-  color: #c9ac80;
+  color: var(--navigaion-active-color);
   background: #0000004D;
 }
 #cssmenu li:hover > ul > li a:before {
@@ -207,9 +207,7 @@ body.arabic-version #cssmenu > ul > li.has-sub > a::after {
   min-width: max-content;
 }
 
-/* #cssmenu >ul> li.has-sub> ul> li.has-sub > ul {
-  border-top: 5px solid #C9AC80;
-} */
+
 #cssmenu ul ul li:last-child a {
   border-radius: 0 0 5px 5px;
 }
@@ -255,35 +253,11 @@ body.arabic-version #cssmenu > ul > li.has-sub > a::after {
   border-bottom: 0;
 }
 
-/* #cssmenu ul ul li.has-sub > a:after {
-  position: absolute;
-  top: 16px;
-  right: 11px;
-  width: 8px;
-  height: 2px;
-  display: block;
-  background: #1b1b1b;
-  content: "";
-} */
 #cssmenu.align-right ul ul li.has-sub > a:after {
   right: auto;
   left: 11px;
 }
-/* #cssmenu ul ul li.has-sub > a:before {
-  position: absolute;
-  top: 13px;
-  right: 14px;
-  display: block;
-  width: 2px;
-  height: 8px;
-  background: #1b1b1b;
-  content: "";
-  -webkit-transition: all 0.25s ease;
-  -moz-transition: all 0.25s ease;
-  -ms-transition: all 0.25s ease;
-  -o-transition: all 0.25s ease;
-  transition: all 0.25s ease;
-} */
+
 #cssmenu.align-right ul ul li.has-sub > a:before {
   right: auto;
   left: 14px;
@@ -312,21 +286,21 @@ body.arabic-version #cssmenu > ul > li.has-sub > a::after {
   }
   #cssmenu ul ul li:hover > a,
   #cssmenu ul ul li a:hover {
-    color: #c9ac80;
+    color: var(--navigaion-active-color);
 
 
     border-left: none;
-    border-inline-start: 5px solid #c9ac80 !important;
+    border-inline-start: 5px solid var(--navigaion-active-color) !important;
   }
 .arabic-version  #cssmenu ul ul li:hover > a,
 .arabic-version  #cssmenu ul ul li a:hover {
     color: #002e61;
     
     border-left: none;
-    border-inline-start: 5px solid #c9ac80 !important;
+    border-inline-start: 5px solid var(--navigaion-active-color) !important;
   }
   #cssmenu > ul > li.has-sub > ul > li:hover ul {
-    /* border-top: 5px solid #c9ac80; */
+    /* border-top: 5px solid var(--navigaion-active-color); */
     border-start-end-radius: 10px;
     border-end-end-radius: 10px;
   }
@@ -340,7 +314,7 @@ body.arabic-version #cssmenu > ul > li.has-sub > a::after {
   }
   #cssmenu > ul > li.has-sub > ul li ul li:hover > a,
   #cssmenu > ul > li.has-sub > ul li ul a:hover {
-    border-inline-start: 5px solid #c9ac80 !important;
+    border-inline-start: 5px solid var(--navigaion-active-color) !important;
   }
 }
 
@@ -536,21 +510,21 @@ body.arabic-version #cssmenu ul ul li a {
 }
 @media (max-width: 1200px) {
   #cssmenu li a:hover {
-    background: linear-gradient(
+    /* background: linear-gradient(
       90deg,
       rgba(201, 172, 128, 0.3) 0%,
       rgba(201, 172, 128, 0) 100%
-    ) !important;
-    border-inline-start: 5px solid #c9ac80 !important;
+    ) !important; */
+    border-inline-start: 5px solid var(--navigaion-active-color) !important;
   }
   body.arabic-version #cssmenu ul li:hover > a,
   body.arabic-version #cssmenu ul li a:hover {
-    background: linear-gradient(
+    /* background: linear-gradient(
       270deg,
       rgba(201, 172, 128, 0.3) 0%,
       rgba(201, 172, 128, 0) 100%
-    );
-    border-inline-start: 5px solid #c9ac80 !important;
+    ); */
+    border-inline-start: 5px solid var(--navigaion-active-color) !important;
   }
 }
 
@@ -590,7 +564,7 @@ body.arabic-version #cssmenu ul ul li a {
     /* background: #fff !important; */
   }
 .flying-navigation {
-background: #fff;
+background: var(--primary-white-color);
 }
   #cssmenu > ul > li > a {
     padding: 15px 17px;
@@ -658,7 +632,7 @@ background: #fff;
       rgba(201, 172, 128, 0) 100%
     );
 
-    border-inline-start: 5px solid #c9ac80 !important;
+    border-inline-start: 5px solid var(--navigaion-active-color) !important;
   }
   #cssmenu ul ul li a {
     font-size: 13px;
@@ -749,7 +723,7 @@ background: #fff;
       rgba(201, 172, 128, 0) 100%
     );
 
-    border-inline-start: 5px solid #c9ac80 !important;
+    border-inline-start: 5px solid var(--navigaion-active-color) !important;
   }
   #cssmenu ul ul li a {
     font-size: 13px;
