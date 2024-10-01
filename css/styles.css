@@ -9,6 +9,7 @@
   --main-color: #033750;
   --primary-color: #818188;
   --secondary-color: rgba(201, 172, 128, 1);
+  --second-color: #B1854F;
   --primary-white-color: #fff;
   --gray-color: #f3f3f3;
   --dark-gray-color: #c4c4c2;
@@ -18,6 +19,15 @@
   --line-border-empty: #eaecf0;
   --accordion-button-background-color: #015184;
   --director-card-background-color: #01518412;
+
+
+--navigaion-active-color:#c9ac80;
+--navigation-hover:#c9ac802c;  
+--search-btn-flying-navbar-hover:#fff;
+--searchBarOpen-btn:#c9ac80;
+  --searchBarOpen-bg-color: rgba(0, 46, 97, 0.4);
+  --navigation-scrolled-background:#ffffff;
+  --navigation-boxshadow:0px 20px 20px 0px #b6b6b640
 }
 @media (max-width: 991px) {
   html {
@@ -42,11 +52,11 @@
 }
 @font-face {
   font-family: "Cairo-extra-light";
-  src: url("../fonts/EN Font/Cairo\ ExtraLight\ 275.ttf");
+  src: url("../fonts/din-next-lt-w23-light.ttf");
 }
 @font-face {
   font-family: "Cairo-Regular";
-  src: url("../fonts/EN Font/Cairo\ Regular\ 400.ttf");
+  src: url("../fonts/din-next-lt-w23-regular.ttf");
 }
 @font-face {
   font-family: "Cairo-SemiBold";
@@ -54,12 +64,9 @@
 }
 @font-face {
   font-family: "Cairo-bold";
-  src: url("../fonts/EN Font/Cairo\ Bold\ 700.ttf");
+  src: url("../fonts/DIN-NEXT-ARABIC-BOLD-1.otf");
 }
-@font-face {
-  font-family: "Cairo-black";
-  src: url("../fonts/EN Font/Cairo\ Black\ 900.ttf");
-}
+  
 @font-face {
   font-family: "DIN-NEXT-MEDIUM";
   src: url("../fonts/DIN-NEXT-LT-W23-MEDIUM.otf");
@@ -503,8 +510,9 @@ form textarea {
 }
 .government-strategies--title h5 {
   position: relative;
+  line-height: 31px;
   z-index: 2;
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
 }
 
 .government-strategies-section .slick-prev,
@@ -602,8 +610,16 @@ form textarea {
   bottom: 5%;
   z-index: 10;
   color: #fff;
-  left: 7.5%;
+  line-height: 24px;
+  font-family: DIN-NEXT-MEDIUM;
+  inset-inline-start: 7.5%;
 }
+.arabic-version .government-strategies-slider-container
+  .government-strategies-slider--card
+  .flipping-card--front
+  h6 {
+bottom: 9%;
+  }
 .government-strategies-slider-container
   .government-strategies-slider--card
   .flipping-card--front
@@ -711,6 +727,12 @@ position: absolute;
     z-index: 2;width: 100%;
     padding-inline: 1.5rem;
   }
+  .arabic-version .government-strategies-slider-container
+  .government-strategies-slider--card
+  .flipping-card--back
+  .flipping-card-back--inner-links {
+    flex-direction: row-reverse;
+  }
   .government-strategies-slider-container
   .government-strategies-slider--card
   .flipping-card--back
@@ -739,7 +761,7 @@ position: absolute;
   .flipping-card--back
   .flipping-card-back--inner-links a:nth-child(1) svg{
 
-    padding: .35rem;
+    padding: .35rem !important;
   }
 
   .government-strategies-slider-container
@@ -773,6 +795,13 @@ position: absolute;
     display: flex;gap: .4rem;
     align-items: center;justify-content: center;
 }
+
+.arabic-version .government-strategies-slider-container
+.government-strategies-slider--card
+.flipping-card--back
+.flipping-card-back--inner-links a{
+flex-direction: row-reverse;
+}
 .government-strategies-slider-container
 .government-strategies-slider--card
 .flipping-card--back
@@ -792,6 +821,12 @@ position: absolute;
 .flipping-card--back
 .flipping-card-back--inner-links a > span {
   padding-inline-end: .5rem;
+}
+.arabic-version .government-strategies-slider-container .government-strategies-slider--card .flipping-card--back .flipping-card-back--inner-links a > span {
+  padding-inline-end: 0;
+  padding-inline-start: 1rem;
+  padding-bottom: 0.4rem;
+
 }
 .government-strategies-slider-container
 .government-strategies-slider--card
@@ -967,4 +1002,98 @@ position: absolute;
 
 }
 
+}
+
+
+
+.hover-growing-links{
+  display: flex;
+  gap: .4rem;
+  position: relative;
+  color: inherit;
+  text-decoration: none;
+  color: var(--main-color);
+  /* overflow: hidden; */
+  border-radius: 25px;
+  overflow: hidden;
+  outline: none;
+  align-items: center;
+  width: max-content;
+}
+.hover-growing-links[data-hover-pos="start"]{
+  padding-inline-start: 1rem;
+}
+.hover-growing-links[data-hover-pos="end"]{
+  padding-inline-end: 1rem;
+
+}
+.hover-growing-links[data-hover-pos="start"]::after,
+.hover-growing-links::after{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: "";
+  top: 0;
+  inset-inline-start: 100%;
+  transition: all 0.3s ease-out;
+  /* inset-inline-start: -100%; */
+  background: var(--main-color);
+}
+.hover-growing-links[data-hover-pos="end"]::after{
+  inset-inline-start: -100%;
+
+}
+.hover-growing-links:hover[data-hover-pos="start"]::after{
+  inset-inline-end: 0;
+}
+.hover-growing-links:hover[data-hover-pos="end"]::after,
+.hover-growing-links:hover::after{
+  transition: all 0.3s ease-out;
+  inset-inline-start: 0;
+}
+.hover-growing-links:hover[data-hover-pos="end"]::after{
+  inset-inline-end: 0;
+}
+.hover-growing-links[data-hover-pos="end"]:hover i{
+  transform: translateX(5px);
+  color: #fff;
+  transition: all 0.3s ease-out;
+}
+.hover-growing-links[data-hover-pos="start"]:hover i{
+  color: #fff;
+  transform: translateX(-5px);
+  transition: all 0.3s ease-out;
+}
+.hover-growing-links i{
+  position: relative;
+  z-index: 3;
+  transition: all 0.3s ease-out;
+}
+.hover-growing-links > *{
+  position: relative;
+  transition: all 0.3s ease-out;
+  z-index: 3
+}
+.hover-growing-links .link{
+  padding-bottom: 0.3rem;
+}
+.hover-growing-links:hover .link{
+  transition: all 0.3s ease-out;
+  
+  position: relative;
+  z-index: 3;
+color: #fff;
+}
+.hover-growing-links .arrow{
+  position: relative;
+  z-index: 3;
+  border-radius: 100%;
+  padding: .5rem;
+   width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1;
+  border: 1px solid var(--main-color);
 }
